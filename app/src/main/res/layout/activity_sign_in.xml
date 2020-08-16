@@ -27,6 +27,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="24dp"
+        android:paddingStart="12dp"
         android:hint="Email Address"/>
 
     <EditText
@@ -34,6 +35,7 @@
         android:layout_height="50dp"
         android:background="@drawable/full_rounded"
         android:layout_marginStart="24dp"
+        android:paddingStart="12dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:hint="Password"/>
@@ -42,6 +44,7 @@
         android:layout_height="wrap_content"
         android:text="Forget Password?"
         android:layout_gravity="end"
+
         android:layout_marginEnd="24dp"
         android:layout_marginTop="12dp"
         android:textColor="#FFFFFF"/>
