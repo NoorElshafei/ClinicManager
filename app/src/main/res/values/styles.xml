@@ -21,6 +21,7 @@
     </style>
 
     <style name="CalendarCustomTextAppearance2" parent="TextAppearance.AppCompat.Medium">
+
         <item name="android:textColor">#656AAA</item>
         <item name="fontFamily">@font/opensans_regular</item>
         <item name="android:textSize">14sp</item>
