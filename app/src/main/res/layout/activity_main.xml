@@ -76,6 +76,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/my_clinic_menu_item"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -119,6 +120,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/patient_MenuItem"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"

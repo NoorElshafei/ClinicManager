@@ -20,6 +20,8 @@ import android.widget.LinearLayout;
 
 import com.example.ClinicManager.ui.fragment.appointment_list.AppointmentListFragment;
 import com.example.ClinicManager.ui.fragment.dashboard.DashBoardFragment;
+import com.example.ClinicManager.ui.fragment.my_clinic.MyClinicFragment;
+import com.example.ClinicManager.ui.fragment.patient.PatientsFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
@@ -27,7 +29,7 @@ import com.google.android.material.snackbar.Snackbar;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private DrawerLayout drawer;
     private ImageView menu;
-    private LinearLayout appointmentMenuItem, dashBoardMenuItem;
+    private LinearLayout appointmentMenuItem, dashBoardMenuItem,myClinicMenuItem, patientMenuItem;
 
 
     @Override
@@ -39,6 +41,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         menu = findViewById(R.id.menu_image);
         appointmentMenuItem = findViewById(R.id.appointment_menu_item);
         dashBoardMenuItem = findViewById(R.id.dashboard_menu_item);
+        myClinicMenuItem = findViewById(R.id.my_clinic_menu_item);
+        patientMenuItem = findViewById(R.id.patient_MenuItem);
 
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.container, DashBoardFragment.newInstance(), "DashBoardFragment")
@@ -58,6 +62,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         dashBoardMenuItem.setOnClickListener(this);
         appointmentMenuItem.setOnClickListener(this);
+        myClinicMenuItem.setOnClickListener(this);
+        patientMenuItem.setOnClickListener(this);
 
     }
 
@@ -81,6 +87,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             openFragment(new AppointmentListFragment());
         } else if (view == dashBoardMenuItem) {
             openFragment(new DashBoardFragment());
+        }else if (view == myClinicMenuItem) {
+            openFragment(new MyClinicFragment());
+        }else if (view == patientMenuItem) {
+            openFragment(new PatientsFragment());
         }
     }
 

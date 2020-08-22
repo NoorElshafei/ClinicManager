@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ClinicManager.ui.fragment.patient.PatientsFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/colorPrimary"
+       >
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_marginTop="24dp"
+          android:layout_marginBottom="24dp"
+          android:layout_marginStart="24dp"
+          android:layout_marginEnd="24dp"
+          android:drawableStart="@drawable/ic_search_black_24dp"
+          android:paddingStart="12dp"
+          android:drawablePadding="12dp"
+          android:hint="Search by name"
+          android:drawableEnd="@drawable/ic_tune_black_24dp"
+          android:paddingEnd="12dp"
+          android:background="#fff"
+          />
+   </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/patient_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/patient_item"/>
+
+</LinearLayout>
