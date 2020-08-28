@@ -1,30 +1,18 @@
 package com.example.ClinicManager;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.NavigationUI;
-
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
 import com.example.ClinicManager.ui.fragment.appointment_list.AppointmentListFragment;
 import com.example.ClinicManager.ui.fragment.dashboard.DashBoardFragment;
 import com.example.ClinicManager.ui.fragment.my_clinic.MyClinicFragment;
 import com.example.ClinicManager.ui.fragment.patient.PatientsFragment;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private DrawerLayout drawer;
