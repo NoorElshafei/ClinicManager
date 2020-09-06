@@ -46,7 +46,7 @@ public class PatientsFragment extends Fragment {
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext(),RecyclerView.VERTICAL,false));
 
-        patientAdapter = new PatientAdapter();
+        patientAdapter = new PatientAdapter(getContext());
 
         recyclerView.setAdapter(patientAdapter);
     }

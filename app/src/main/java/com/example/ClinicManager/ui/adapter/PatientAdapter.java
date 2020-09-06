@@ -1,15 +1,25 @@
 package com.example.ClinicManager.ui.adapter;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.ClinicManager.R;
+import com.example.ClinicManager.ui.activity.patient_details.PatientDetailsActivity;
 
 public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PatientViewHolder> {
+
+    Context context;
+
+    public PatientAdapter(Context context) {
+        this.context = context;
+    }
 
     @NonNull
     @Override
@@ -22,6 +32,13 @@ public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PatientV
     @Override
     public void onBindViewHolder(@NonNull PatientViewHolder holder, int position) {
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, PatientDetailsActivity.class);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

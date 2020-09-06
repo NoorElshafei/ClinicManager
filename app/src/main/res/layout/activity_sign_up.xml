@@ -56,9 +56,10 @@
             android:layout_marginTop="36dp"
             android:hint="Email Address"/>
         <Button
+            android:id="@+id/signUp_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Proceed"
+            android:text="Sign Up"
             android:background="#B86CD9"
             android:textColor="#FFFFFF"
             android:layout_marginStart="24dp"
