@@ -1,4 +1,4 @@
-package com.example.ClinicManager;
+package com.example.ClinicManager.ui.activity.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import com.example.ClinicManager.R;
 import com.example.ClinicManager.ui.fragment.appointment_list.AppointmentListFragment;
 import com.example.ClinicManager.ui.fragment.dashboard.DashBoardFragment;
 import com.example.ClinicManager.ui.fragment.my_clinic.MyClinicFragment;

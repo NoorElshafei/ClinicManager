@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.ClinicManager.MainActivity;
+import com.example.ClinicManager.ui.activity.main.MainActivity;
 import com.example.ClinicManager.R;
 
 public class SignInActivity extends AppCompatActivity {

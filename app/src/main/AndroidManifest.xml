@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.new_schedule.NewScheduleActivity"></activity>
+        <activity android:name=".ui.activity.edit_profile.EditProfileActivity"></activity>
+        <activity android:name=".ui.activity.clinic_profile.ClinicProfileActivity" />
+        <activity android:name=".ui.activity.new_schedule.NewScheduleActivity" />
         <activity android:name=".ui.activity.patient_details.PatientDetailsActivity" />
         <activity android:name=".ui.activity.sign_in.SignInActivity">
             <intent-filter>
@@ -21,7 +23,7 @@
         <activity android:name=".ui.activity.sign_up.SignUpActivity" />
         <activity android:name=".ui.activity.permission.PermissionScreen" />
         <activity android:name=".ui.activity.splash.SplashScreen" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.activity.main.MainActivity" />
     </application>
 
 </manifest>
