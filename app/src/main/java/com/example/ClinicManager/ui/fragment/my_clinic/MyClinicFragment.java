@@ -2,6 +2,7 @@ package com.example.ClinicManager.ui.fragment.my_clinic;
 
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,13 +12,16 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.example.ClinicManager.R;
+import com.example.ClinicManager.ui.activity.clinic_profile.ClinicProfileActivity;
 
 
 public class MyClinicFragment extends Fragment {
 
     private MyClinicViewModel mViewModel;
+    private LinearLayout linearLayout;
 
     public static MyClinicFragment newInstance() {
         return new MyClinicFragment();
@@ -26,7 +30,9 @@ public class MyClinicFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.my_clinic_fragment, container, false);
+        View view = inflater.inflate(R.layout.my_clinic_fragment, container, false);
+               linearLayout = view.findViewById(R.id.clinic_profile) ;
+        return view;
     }
 
     @Override
@@ -34,6 +40,14 @@ public class MyClinicFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         mViewModel = ViewModelProviders.of(this).get(MyClinicViewModel.class);
         // TODO: Use the ViewModel
+
+
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), ClinicProfileActivity.class));
+            }
+        });
     }
 
 }
