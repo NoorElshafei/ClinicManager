@@ -110,12 +110,8 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="4dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
                 <LinearLayout
+                    android:id="@+id/procedure_Linear"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
@@ -145,7 +141,6 @@
                         android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
                 </LinearLayout>
 
-            </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"

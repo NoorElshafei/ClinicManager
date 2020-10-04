@@ -16,12 +16,13 @@ import android.widget.LinearLayout;
 
 import com.example.ClinicManager.R;
 import com.example.ClinicManager.ui.activity.clinic_profile.ClinicProfileActivity;
+import com.example.ClinicManager.ui.activity.procedures.ProceduresActivity;
 
 
 public class MyClinicFragment extends Fragment {
 
     private MyClinicViewModel mViewModel;
-    private LinearLayout linearLayout;
+    private LinearLayout profileLinear,procedureLinear;
 
     public static MyClinicFragment newInstance() {
         return new MyClinicFragment();
@@ -31,7 +32,8 @@ public class MyClinicFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.my_clinic_fragment, container, false);
-               linearLayout = view.findViewById(R.id.clinic_profile) ;
+        profileLinear = view.findViewById(R.id.clinic_profile) ;
+        procedureLinear = view.findViewById(R.id.procedure_Linear) ;
         return view;
     }
 
@@ -42,10 +44,16 @@ public class MyClinicFragment extends Fragment {
         // TODO: Use the ViewModel
 
 
-        linearLayout.setOnClickListener(new View.OnClickListener() {
+        profileLinear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getContext(), ClinicProfileActivity.class));
+            }
+        });
+        procedureLinear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), ProceduresActivity.class));
             }
         });
     }
