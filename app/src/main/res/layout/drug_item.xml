@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:id="@+id/price_procedures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="drug name"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/edit_drug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@+id/delete_drug"
+        android:padding="12dp"
+        android:src="@drawable/ic_baseline_edit_24_bink" />
+
+    <ImageView
+        android:id="@+id/delete_drug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_baseline_delete_24_bink" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/delete_drug"
+        android:layout_marginTop="12dp"
+        android:background="#38000000" />
+
+</RelativeLayout>

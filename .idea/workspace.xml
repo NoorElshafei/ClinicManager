@@ -13,28 +13,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f981b9a9-dd14-40c4-8eb8-886c4d49ab10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/add_procedures/AddProcedureActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/procedures/ProceduresActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/adapter/ProceduresAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_delete_24_bink.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_edit_24_bink.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_procedures.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/procedures_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/add_drug/AddDrugActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/add_schedule/AddScheduleExistingActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/add_schedule/AddScheduleNewPatientActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/drug_list/DrugListActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/patient_list_schedule/PatientListScheduleActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/adapter/DrugAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_add_24_white.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_person_add_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_supervisor_account_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_drug.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_procedure.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_schedule_existing.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_schedule_new_patient.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_drug_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/drug_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/fragment/my_clinic/MyClinicFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/fragment/my_clinic/MyClinicFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/my_clinic_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/my_clinic_fragment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/patients_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/patients_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/procedures/ProceduresActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/procedures/ProceduresActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/adapter/ProceduresAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/adapter/ProceduresAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/fragment/appointment_list/AppointmentListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/fragment/appointment_list/AppointmentListFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_procedures.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_procedures.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/appointment_list_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/appointment_list_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="52009eb1f4697477" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_27" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -50,10 +65,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
-        <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -67,8 +82,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_2_API_29" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-09-22T11:58:26.996Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_2_API_27" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-10-04T13:40:30.768Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../android/Sdk" />
@@ -80,9 +95,12 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="android.template.1992425252">
-      <recent name="com.example.ClinicManager.ui.activity.new_schedule" />
-      <recent name="com.example.ClinicManager.ui.activity.patient_details" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\noor\ClinicManager\app\src\main\res\drawable" />
+      <recent name="E:\ClinicManager\app\src\main\res\drawable" />
+      <recent name="C:\Users\admin\Documents\GitHub\ClinicManager\app\src\main\res\drawable" />
+      <recent name="C:\Users\NoorEldeenKhaled\AndroidStudioProjects\MyApplication6\app\src\main\res\drawable" />
+      <recent name="C:\Users\NoorEldeenKhaled\AndroidStudioProjects\MyApplication6\app\src\main\res\font" />
     </key>
     <key name="android.template.packageName">
       <recent name="com.example.myapplication.ui.activity.sign_in" />
@@ -96,15 +114,18 @@
       <recent name="com.example.ClinicManager.ui.activity.clinic_profile" />
     </key>
     <key name="android.template.942583099">
-      <recent name="com.example.ClinicManager.ui.activity.add_procedures" />
-      <recent name="com.example.ClinicManager.ui.activity" />
+      <recent name="com.example.ClinicManager.ui.activity.patient_list_schedule" />
+      <recent name="com.example.ClinicManager.ui.activity.add_schedule" />
+      <recent name="com.example.ClinicManager.ui.activity.add_schedule_new_patient" />
+      <recent name="com.example.ClinicManager.ui.activity.add_drug" />
+      <recent name="com.example.ClinicManager.ui.activity.drug_list" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\noor\ClinicManager\app\src\main\res\drawable" />
-      <recent name="E:\ClinicManager\app\src\main\res\drawable" />
-      <recent name="C:\Users\admin\Documents\GitHub\ClinicManager\app\src\main\res\drawable" />
-      <recent name="C:\Users\NoorEldeenKhaled\AndroidStudioProjects\MyApplication6\app\src\main\res\drawable" />
-      <recent name="C:\Users\NoorEldeenKhaled\AndroidStudioProjects\MyApplication6\app\src\main\res\font" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.ClinicManager.ui.adapter" />
+    </key>
+    <key name="android.template.1992425252">
+      <recent name="com.example.ClinicManager.ui.activity.new_schedule" />
+      <recent name="com.example.ClinicManager.ui.activity.patient_details" />
     </key>
   </component>
   <component name="RunManager">
@@ -241,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601568331714</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="procedures design">
+      <created>1601812370611</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601812370611</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,7 +295,8 @@
     <MESSAGE value="design update 7" />
     <MESSAGE value="design update 8" />
     <MESSAGE value="design update 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="design update 9" />
+    <MESSAGE value="procedures design" />
+    <option name="LAST_COMMIT_MESSAGE" value="procedures design" />
   </component>
   <component name="WindowStateProjectService">
     <state x="477" y="252" key="#PSD" timestamp="1597588733679">
@@ -282,18 +311,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597593647997" />
-    <state x="540" y="275" key="AndroidCreateResourceDirectoryDialog" timestamp="1597589342055">
+    <state x="540" y="275" key="AndroidCreateResourceDirectoryDialog" timestamp="1601818782809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="275" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597589342055" />
-    <state x="540" y="275" key="AndroidCreateResourceFileDialog" timestamp="1601807750731">
+    <state x="540" y="275" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601818782809" />
+    <state x="540" y="275" key="AndroidCreateResourceFileDialog" timestamp="1601818744019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="275" key="AndroidCreateResourceFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601807750731" />
-    <state x="544" y="113" key="CommitChangelistDialog2" timestamp="1601568329727">
+    <state x="540" y="275" key="AndroidCreateResourceFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601818744019" />
+    <state x="544" y="113" key="CommitChangelistDialog2" timestamp="1601812368420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="544" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601568329727" />
+    <state x="544" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601812368420" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597678025168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -330,9 +359,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599387142254" />
-    <state x="623" y="225" key="search.everywhere.popup" timestamp="1597674157461">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601816819380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597674157461" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601816819380" />
   </component>
 </project>

@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.add_procedures.AddProcedureActivity"></activity>
+        <activity android:name=".ui.activity.patient_list_schedule.PatientListScheduleActivity"></activity>
+        <activity android:name=".ui.activity.add_schedule.AddScheduleExistingActivity" />
+        <activity android:name=".ui.activity.add_schedule.AddScheduleNewPatientActivity" />
+        <activity android:name=".ui.activity.add_drug.AddDrugActivity" />
+        <activity android:name=".ui.activity.drug_list.DrugListActivity" />
+        <activity android:name=".ui.activity.add_procedures.AddProcedureActivity" />
         <activity android:name=".ui.activity.procedures.ProceduresActivity" />
         <activity android:name=".ui.activity.edit_profile.EditProfileActivity" />
         <activity android:name=".ui.activity.clinic_profile.ClinicProfileActivity" />

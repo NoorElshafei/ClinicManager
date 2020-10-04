@@ -1,4 +1,4 @@
-package com.example.ClinicManager.ui.activity.procedures;
+package com.example.ClinicManager.ui.activity.drug_list;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -11,34 +11,31 @@ import android.view.View;
 
 import com.example.ClinicManager.R;
 import com.example.ClinicManager.ui.activity.add_drug.AddDrugActivity;
-import com.example.ClinicManager.ui.activity.add_procedures.AddProcedureActivity;
-import com.example.ClinicManager.ui.adapter.PatientAdapter;
+import com.example.ClinicManager.ui.activity.procedures.ProceduresActivity;
+import com.example.ClinicManager.ui.adapter.DrugAdapter;
 import com.example.ClinicManager.ui.adapter.ProceduresAdapter;
-import com.example.ClinicManager.ui.fragment.patient.PatientsViewModel;
 
-public class ProceduresActivity extends AppCompatActivity {
-
-    private ProceduresAdapter proceduresAdapter;
+public class DrugListActivity extends AppCompatActivity {
+    private DrugAdapter drugAdapter;
     private RecyclerView recyclerView;
-    private CardView addProcedure;
-
+    private CardView addDrug;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_procedures);
+        setContentView(R.layout.activity_drug_list);
 
         recyclerView = findViewById(R.id.procedures_recycler);
-        addProcedure = findViewById(R.id.add_procedure);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.VERTICAL,false));
 
-        proceduresAdapter = new ProceduresAdapter(this);
+        drugAdapter = new DrugAdapter(this);
 
-        recyclerView.setAdapter(proceduresAdapter);
-        addProcedure.setOnClickListener(new View.OnClickListener() {
+        recyclerView.setAdapter(drugAdapter);
+
+        addDrug.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ProceduresActivity.this, AddProcedureActivity.class));
+                startActivity(new Intent(DrugListActivity.this, AddDrugActivity.class));
             }
         });
     }

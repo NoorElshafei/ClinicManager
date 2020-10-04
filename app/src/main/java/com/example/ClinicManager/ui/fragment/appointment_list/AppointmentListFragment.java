@@ -1,5 +1,6 @@
 package com.example.ClinicManager.ui.fragment.appointment_list;
 
+import androidx.cardview.widget.CardView;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.content.ContentResolver;
@@ -15,8 +16,11 @@ import android.provider.CalendarContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.example.ClinicManager.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -25,6 +29,11 @@ import java.util.TimeZone;
 
 
 public class AppointmentListFragment extends Fragment {
+    private FloatingActionButton floatingActionButton;
+    private LinearLayout scheduleNewPatientLinear,scheduleExistingPatientLinear;
+    private boolean isFABOpen;
+    private TextView newPatientText,existingPatientText;
+    private CardView scheduleNewPatient,scheduleExistingPatient;
 
     private AppointmentListViewModel mViewModel;
 
@@ -37,6 +46,77 @@ public class AppointmentListFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.appointment_list_fragment, container, false);
+
+        floatingActionButton = view.findViewById(R.id.fab);
+        scheduleNewPatientLinear = view.findViewById(R.id.schedule_new_patient_linear);
+        scheduleExistingPatientLinear = view.findViewById(R.id.schedule_existing_patient_linear);
+        newPatientText = view.findViewById(R.id.new_patient_text);
+        existingPatientText = view.findViewById(R.id.existing_patient_text);
+        scheduleNewPatient=view.findViewById(R.id.schedule_new_patient);
+        scheduleExistingPatient = view.findViewById(R.id.schedule_existing_patient);
+
+        return view;
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        mViewModel = ViewModelProviders.of(this).get(AppointmentListViewModel.class);
+        // TODO: Use the ViewModel
+
+        scheduleNewPatient.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                
+            }
+        });
+        scheduleExistingPatient.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!isFABOpen){
+                    showFABMenu();
+                }else{
+                    closeFABMenu();
+                }
+            }
+        });
+    }
+
+    public void addEvent() {
+        Date c = Calendar.getInstance().getTime();
+        ContentResolver cr = getContext().getContentResolver();
+        ContentValues eventValues = new ContentValues();
+        eventValues.put(CalendarContract.Events.TITLE, "title");
+        eventValues.put(CalendarContract.Events.EVENT_LOCATION, "location");
+        eventValues.put(CalendarContract.Events.DTSTART, c.getTime());
+        eventValues.put(CalendarContract.Events.DTEND, c.getTime());
+        eventValues.put(CalendarContract.Events.CALENDAR_ID, "1");//Defaul calendar
+        eventValues.put(CalendarContract.Events.EVENT_TIMEZONE, TimeZone.SHORT);
+        cr.insert(CalendarContract.Events.CONTENT_URI, eventValues);
+    }
+
+    private void showFABMenu(){
+        isFABOpen=true;
+        scheduleNewPatientLinear.animate().translationY(-getResources().getDimension(R.dimen.standard_55));
+        scheduleExistingPatientLinear.animate().translationY(-getResources().getDimension(R.dimen.standard_105));
+        newPatientText.setVisibility(View.VISIBLE);
+        existingPatientText.setVisibility(View.VISIBLE);
+
+    }
+
+    private void closeFABMenu(){
+        isFABOpen=false;
+        newPatientText.setVisibility(View.INVISIBLE);
+        existingPatientText.setVisibility(View.INVISIBLE);
+        scheduleNewPatientLinear.animate().translationY(0);
+        scheduleExistingPatientLinear.animate().translationY(0);
+    }
 
       /*  Date c = Calendar.getInstance().getTime();
 
@@ -80,27 +160,4 @@ public class AppointmentListFragment extends Fragment {
         reminders.put(CalendarContract.Reminders.EVENT_ID, eventID);
         reminders.put(CalendarContract.Reminders.METHOD, CalendarContract.Reminders.METHOD_ALERT);
         reminders.put(CalendarContract.Reminders.MINUTES, 10);*/
-        return view;
-    }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(AppointmentListViewModel.class);
-        // TODO: Use the ViewModel
-
-    }
-
-    public void addEvent() {
-        Date c = Calendar.getInstance().getTime();
-        ContentResolver cr = getContext().getContentResolver();
-        ContentValues eventValues = new ContentValues();
-        eventValues.put(CalendarContract.Events.TITLE, "title");
-        eventValues.put(CalendarContract.Events.EVENT_LOCATION, "location");
-        eventValues.put(CalendarContract.Events.DTSTART, c.getTime());
-        eventValues.put(CalendarContract.Events.DTEND, c.getTime());
-        eventValues.put(CalendarContract.Events.CALENDAR_ID, "1");//Defaul calendar
-        eventValues.put(CalendarContract.Events.EVENT_TIMEZONE, TimeZone.SHORT);
-        cr.insert(CalendarContract.Events.CONTENT_URI, eventValues);
-    }
 }
