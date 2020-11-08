@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="custom_weekdays_arabic">
+        <item>إثنين</item>
+        <item>ثلاثاء</item>
+        <item>اربعاء</item>
+        <item>خميس</item>
+        <item>جمعة</item>
+        <item>سبت</item>
+        <item>أحد</item>
+    </string-array>
+</resources>

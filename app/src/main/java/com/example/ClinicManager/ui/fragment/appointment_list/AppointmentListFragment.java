@@ -20,10 +20,17 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.ClinicManager.R;
+import com.example.ClinicManager.util.EventBuilder;
+import com.example.ClinicManager.util.MySelectorDec;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.prolificinteractive.materialcalendarview.CalendarDay;
+import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Date;
 import java.util.TimeZone;
 
@@ -34,6 +41,7 @@ public class AppointmentListFragment extends Fragment {
     private boolean isFABOpen;
     private TextView newPatientText,existingPatientText;
     private CardView scheduleNewPatient,scheduleExistingPatient;
+    private MaterialCalendarView calendarView;
 
     private AppointmentListViewModel mViewModel;
 
@@ -54,6 +62,7 @@ public class AppointmentListFragment extends Fragment {
         existingPatientText = view.findViewById(R.id.existing_patient_text);
         scheduleNewPatient=view.findViewById(R.id.schedule_new_patient);
         scheduleExistingPatient = view.findViewById(R.id.schedule_existing_patient);
+        calendarView = view.findViewById(R.id.calendarView);
 
         return view;
     }
@@ -63,6 +72,8 @@ public class AppointmentListFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         mViewModel = ViewModelProviders.of(this).get(AppointmentListViewModel.class);
         // TODO: Use the ViewModel
+        customizeCalendar();
+
 
         scheduleNewPatient.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -116,6 +127,19 @@ public class AppointmentListFragment extends Fragment {
         existingPatientText.setVisibility(View.INVISIBLE);
         scheduleNewPatientLinear.animate().translationY(0);
         scheduleExistingPatientLinear.animate().translationY(0);
+    }
+
+    private void customizeCalendar() {
+        calendarView.addDecorator(new MySelectorDec(getContext()));
+
+        Collection<CalendarDay> mydate = new ArrayList<>();
+        mydate.add(CalendarDay.from(2020,  11, 10));
+        Collection<CalendarDay> mydate1 = new ArrayList<>();
+        mydate.add(CalendarDay.from(2020,  11, 10));
+        //mydate.add(CalendarDay.from(2020,  11, 11));
+       // CalendarDay mydate= CalendarDay.from(2020,  11, 10); // year, month, date
+        calendarView.addDecorators(new EventBuilder(R.color.colorPrimary,mydate));
+        calendarView.addDecorators(new EventBuilder(R.color.colorPrimary,mydate1));
     }
 
       /*  Date c = Calendar.getInstance().getTime();
