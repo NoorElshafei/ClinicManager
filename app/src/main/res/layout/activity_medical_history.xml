@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     tools:context=".ui.activity.medical_history.MedicalHistoryActivity">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -100,6 +99,7 @@
     </ScrollView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/add_medical_button"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_alignParentEnd="true"

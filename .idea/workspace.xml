@@ -15,13 +15,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f981b9a9-dd14-40c4-8eb8-886c4d49ab10" name="Default Changelist" comment="patient design 2">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/medical_history/AddHistoryActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/medical_history/MedicalHistoryActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/adapter/MedicalHistoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_history.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_medical_history.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_medical_history.xml" afterDir="false" />
+    <list default="true" id="f981b9a9-dd14-40c4-8eb8-886c4d49ab10" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/ViewMedicalFileActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/button_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/defualt_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_image_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_medical_file.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -32,22 +31,20 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/edit_profile/EditProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/edit_profile/AddOrEditPatientProfileActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/patient_details/PatientDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/patient_details/PatientDetailsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/util/EventBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/util/EventBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_or_edit_patient_profile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_patient_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_patient_details.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/medical_history/MedicalHistoryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ClinicManager/ui/activity/medical_history/MedicalHistoryActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_add_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_medical_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_medical_history.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_2_API_27]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -87,7 +84,7 @@
     <property name="android-custom-viewC:/Users/admin/.gradle/caches/modules-2/files-2.1/com.github.prolificinteractive/material-calendarview/2.0.1/371a4c474009a03fd7ff0edf11b982469edd9604/material-calendarview-2.0.1-sources.jar!/com/prolificinteractive/materialcalendarview/MaterialCalendarView.java_SELECTED" value="MaterialCalendarView" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
     <property name="multi-representation-previewC:/Users/admin/.gradle/caches/modules-2/files-2.1/com.github.prolificinteractive/material-calendarview/2.0.1/371a4c474009a03fd7ff0edf11b982469edd9604/material-calendarview-2.0.1-sources.jar!/com/prolificinteractive/materialcalendarview/MaterialCalendarView.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
@@ -95,6 +92,9 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.2002941371">
+      <recent name="com.example.ClinicManager.ui.activity" />
+    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.example.ClinicManager.util" />
     </key>
@@ -119,23 +119,23 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\noor\ClinicManager\app\src\main\res\drawable" />
     </key>
-    <key name="android.template.-1778205738">
-      <recent name="com.example.ClinicManager.ui.activity.medical_history" />
-      <recent name="com.example.ClinicManager" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\noor\ClinicManager\app\src\main\res\drawable" />
       <recent name="E:\noor\ClinicManager\app\src\main\res\drawable-v24" />
+      <recent name="E:\noor\ClinicManager\app\src\main\res\drawable" />
       <recent name="E:\noor\ClinicManager\app\src\main\res\color" />
       <recent name="E:\noor\ClinicManager\app\src\main\res\font" />
       <recent name="E:\ClinicManager\app\src\main\res\drawable" />
     </key>
-    <key name="android.template.1992425252">
-      <recent name="com.example.ClinicManager.ui.activity.new_schedule" />
-      <recent name="com.example.ClinicManager.ui.activity.patient_details" />
+    <key name="android.template.-1778205738">
+      <recent name="com.example.ClinicManager.ui.activity.medical_history" />
+      <recent name="com.example.ClinicManager" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.ClinicManager.ui.adapter" />
+    </key>
+    <key name="android.template.1992425252">
+      <recent name="com.example.ClinicManager.ui.activity.new_schedule" />
+      <recent name="com.example.ClinicManager.ui.activity.patient_details" />
     </key>
   </component>
   <component name="RunManager">
@@ -313,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604853692038</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="patient design 3">
+      <created>1606043103554</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606043103554</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -342,17 +349,18 @@
     <MESSAGE value="patient design" />
     <MESSAGE value="patient design 1" />
     <MESSAGE value="patient design 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="patient design 2" />
+    <MESSAGE value="patient design 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="patient design 3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="477" y="252" key="#PSD" timestamp="1597588733679">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="477" y="252" key="#PSD/0.0.1920.1040@0.0.1920.1040" timestamp="1597588733679" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1605449904227">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1606048979089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605449904227" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606048979089" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605448726648">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -365,10 +373,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="275" key="AndroidCreateResourceFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605450881622" />
-    <state x="544" y="113" key="CommitChangelistDialog2" timestamp="1605455737954">
+    <state x="544" y="113" key="CommitChangelistDialog2" timestamp="1606043100151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="544" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605455737954" />
+    <state x="544" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606043100151" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597678025168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -389,10 +397,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605453251595" />
-    <state x="597" y="239" key="Vcs.Push.Dialog.v2" timestamp="1604853694235">
+    <state x="597" y="239" key="Vcs.Push.Dialog.v2" timestamp="1606043109028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="597" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604853694235" />
+    <state x="597" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606043109028" />
+    <state x="776" y="298" key="chooseDestDirectoryDialog" timestamp="1606047594144">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="298" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606047594144" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1600613886805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
