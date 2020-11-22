@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.ViewMedicalFileActivity"></activity>
+        <activity android:name=".ui.activity.treatment_plan.TreatmentPlanActivity"></activity>
+        <activity android:name=".ui.activity.medical_history.ViewMedicalFileActivity" />
         <activity android:name=".ui.activity.medical_history.AddHistoryActivity" />
         <activity android:name=".ui.activity.medical_history.MedicalHistoryActivity" />
         <activity android:name=".ui.activity.patient_list_schedule.PatientListScheduleActivity" />

@@ -1,4 +1,4 @@
-package com.example.ClinicManager.ui.activity;
+package com.example.ClinicManager.ui.activity.medical_history;
 
 import androidx.appcompat.app.AppCompatActivity;
 
