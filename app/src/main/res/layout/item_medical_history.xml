@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/med_his_image"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:layout_marginStart="@dimen/_9sdp"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:src="@drawable/person_icon"/>
+
+    <TextView
+        android:id="@+id/caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="caption"
+        android:textColor="@color/black"
+        android:fontFamily="@font/cairo_regular"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_toEndOf="@+id/med_his_image"
+        android:layout_marginStart="@dimen/_9sdp"
+        />
+    <TextView
+        android:id="@+id/date_of_his"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nov 15, 2020 at 4:23 PM"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/cairo_bold"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_toEndOf="@+id/med_his_image"
+        android:layout_marginStart="@dimen/_9sdp"
+        android:layout_below="@+id/caption"
+        />
+
+</RelativeLayout>

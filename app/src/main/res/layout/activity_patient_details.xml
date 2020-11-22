@@ -377,6 +377,7 @@
                 android:text="Aug 09, 2020 at 03:03 AM" />
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/medical_History"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginStart="12dp"
@@ -428,6 +429,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/treatment_plan"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginStart="12dp"
@@ -479,6 +481,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/dental_chart"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginStart="12dp"
@@ -530,6 +533,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/dental_notes"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginStart="12dp"
@@ -581,6 +585,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/prescriptions"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginStart="12dp"
@@ -632,6 +637,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/patient_photos"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginStart="12dp"
@@ -683,6 +689,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/payments"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginStart="12dp"

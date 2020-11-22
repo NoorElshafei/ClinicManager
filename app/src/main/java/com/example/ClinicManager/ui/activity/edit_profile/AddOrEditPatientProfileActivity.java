@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.ClinicManager.R;
 
-public class EditProfileActivity extends AppCompatActivity {
+public class AddOrEditPatientProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_profile);
+        setContentView(R.layout.activity_add_or_edit_patient_profile);
     }
 }

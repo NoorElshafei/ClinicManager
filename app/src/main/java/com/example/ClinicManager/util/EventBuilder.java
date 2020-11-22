@@ -1,4 +1,4 @@
-package com.example.ClinicManager.util;
+ package com.example.ClinicManager.util;
 
 import android.graphics.Color;
 import android.text.style.ForegroundColorSpan;
@@ -28,7 +28,7 @@ public class EventBuilder implements DayViewDecorator {
     @Override
     public void decorate(DayViewFacade view) {
         view.addSpan(new DotSpan(5, Color.GREEN));
-       // view.addSpan(new ForegroundColorSpan(Color.GREEN)); // replace with your own color
+       //view.addSpan(new ForegroundColorSpan(Color.GREEN)); // replace with your own color
 
     }
 }
